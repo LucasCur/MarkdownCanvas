@@ -1,6 +1,6 @@
 # Markdown Canvas
 
-This is a simple Markdown editor built with Node.js, Express, and Markdown-it. It allows users to write Markdown text and see the rendered HTML output in real-time.
+A markdown editor built with Node.js, Express, and Markdown-it. It allows users to write markdown text and see the rendered HTML output in real-time.
 
 ## Installation
 
