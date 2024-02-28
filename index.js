@@ -1,4 +1,5 @@
 const express = require('express');
+const http = require('http');
 const markdownIt = require('markdown-it');
 
 const app = express();
@@ -16,7 +17,18 @@ app.post('/markdown', express.json(), (req, res) => {
   res.send(html);
 });
 
+// Check if port 3000 is available, if not, find a different available port.
 const port = 3000;
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+const server = http.createServer(app);
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.log(`Port ${port} is already in use. Trying another port...`);
+    server.listen(0); // 0 indicates the system should choose an available port
+  }
 });
+server.on('listening', () => {
+  const actualPort = server.address().port;
+  console.log(`Server is running on port ${actualPort}`);
+});
+
+server.listen(port);
