@@ -4,28 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Markdown Canvas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <textarea id="markdown-input" rows="10" cols="50"></textarea>
   <div id="markdown-output"></div>
 
-  <script>
-    const input = document.getElementById('markdown-input');
-    const output = document.getElementById('markdown-output');
-
-    input.addEventListener('input', () => {
-      fetch('/markdown', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ markdown: input.value })
-      })
-      .then(response => response.text())
-      .then(html => {
-        output.innerHTML = html;
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
