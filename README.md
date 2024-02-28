@@ -1,24 +1,24 @@
 # Markdown Canvas
 
-This is a simple Markdown editor built with Node.js, Express, and Markdown-it. It allows users to write Markdown text and see the rendered HTML output in real-time.
+A markdown editor built with Node.js, Express, and Markdown-it. It allows users to write markdown text and see the rendered HTML output in real-time.
 
 ## Installation
 
 Make sure you have Node.js and npm installed on your system. If not, you can download and install them from [here](https://nodejs.org/).
 
-2. Clone the repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/LucasCur/MarkdownCanvas.git
    ```
 
-3. Navigate into the project directory:
+2. Navigate into the project directory:
 
    ```bash
    cd MarkdownCanvas
    ```
 
-4. Install dependencies using npm:
+3. Install dependencies using npm:
 
    ```bash
    npm install
@@ -62,13 +62,13 @@ Contributions are more than welcome! If you would like to contribute to this pro
    git commit -m 'Added feature-name'
    ```
 
-4. Push to the branch:
+5. Push to the branch:
 
    ```bash
    git push origin feature-name
    ```
 
-5. Submit a pull request.
+6. Submit a pull request.
 
 ## License
 
