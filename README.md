@@ -4,7 +4,7 @@ This is a simple Markdown editor built with Node.js, Express, and Markdown-it. I
 
 ## Installation
 
-1. Make sure you have Node.js and npm installed on your system. If not, you can download and install them from [here](https://nodejs.org/).
+Make sure you have Node.js and npm installed on your system. If not, you can download and install them from [here](https://nodejs.org/).
 
 2. Clone the repository:
 
